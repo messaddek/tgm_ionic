@@ -90,7 +90,7 @@ module.exports = "\n<layout-sidemenu>\n  <ion-content>\n\n  <div class='reports-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".red {\n  border: 1px solid red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9waW91c2JveC9wcm9qZWN0cy9ub2RlLmpzL3RnbV9pb25pYy9zcmMvYXBwL1JlcG9ydHNDb21wb25lbnQvUmVwb3J0c1Nob3cucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0Usc0JBQXFCLEVBQ3RCIiwiZmlsZSI6InNyYy9hcHAvUmVwb3J0c0NvbXBvbmVudC9SZXBvcnRzU2hvdy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5yZWQge1xuICBib3JkZXI6IDFweCBzb2xpZCByZWQ7XG59XG5cbi5yZXBvcnRzLXNob3cgaW9uLWNhcmQge1xuICBcbn1cblxuIl19 */"
+module.exports = ".red {\n  border: 1px solid red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2hhbW1lZC9Eb2N1bWVudHMvR2l0SHViL3RnbV9pb25pYy9zcmMvYXBwL1JlcG9ydHNDb21wb25lbnQvUmVwb3J0c1Nob3cucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0Usc0JBQXFCLEVBQ3RCIiwiZmlsZSI6InNyYy9hcHAvUmVwb3J0c0NvbXBvbmVudC9SZXBvcnRzU2hvdy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi5yZWQge1xuICBib3JkZXI6IDFweCBzb2xpZCByZWQ7XG59XG5cbi5yZXBvcnRzLXNob3cgaW9uLWNhcmQge1xuICBcbn1cblxuIl19 */"
 
 /***/ }),
 

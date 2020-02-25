@@ -17,6 +17,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutSidemenuModule } from './LayoutSidemenu/LayoutSidemenu.module';
 import { ReportsModule } from './ReportsComponent/reports.module';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 /**
  * import modules and NOT the components or services
@@ -25,14 +27,14 @@ import { ReportsModule } from './ReportsComponent/reports.module';
  */
 
 @NgModule({
-  declarations: [ AppComponent, ], // LayoutSidemenu
+  declarations: [AppComponent], // LayoutSidemenu
   entryComponents: [],
   imports: [
     AppRoutingModule,
-    BrowserModule, 
+    BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(), 
-    LayoutSidemenuModule,
+    IonicModule.forRoot(),
+    LayoutSidemenuModule
   ],
   providers: [
     AppRouter,
@@ -44,8 +46,6 @@ import { ReportsModule } from './ReportsComponent/reports.module';
     Stripe,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
-
-

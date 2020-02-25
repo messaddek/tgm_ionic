@@ -1,0 +1,19 @@
+<layout-sidemenu>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Add Video</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding>
+    <form [formGroup]="addVideo" (ngSubmit)="logReport()">
+      <ion-item>
+        <ion-label>Title</ion-label>
+        <ion-input type="text" formControlName="title"></ion-input>
+      </ion-item>
+      <app-file-upload formControlName="video"></app-file-upload>
+      <button ion-button type="submit" [disabled]="!addVideo.valid">
+        Publish
+      </button>
+    </form>
+  </ion-content>
+</layout-sidemenu>

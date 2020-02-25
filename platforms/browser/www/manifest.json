@@ -1,1 +1,1 @@
-{"name":"Push Demo","gcm_sender_id":"996231231186"}
+{"background_color":"#FFF","display":"standalone","name":"TGM","short_name":"TGM","version":"com.piousbox.tgm","description":"An awesome Ionic/Cordova app.","author":"Ionic Framework Team","icons":[],"start_url":"https://tgm.mac:8100","gcm_sender_id":"996231231186"}

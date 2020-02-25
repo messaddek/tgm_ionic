@@ -1,0 +1,26 @@
+<layout-sidemenu>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Add Report</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding>
+    <form [formGroup]="addRepprt" (ngSubmit)="logReport()">
+      <ion-item>
+        <ion-label>Title</ion-label>
+        <ion-input type="text" formControlName="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Subtitle</ion-label>
+        <ion-textarea formControlName="subtitle"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Body</ion-label>
+        <ion-textarea formControlName="body"></ion-textarea>
+      </ion-item>
+      <button ion-button type="submit" [disabled]="!addReport.valid">
+        Publish
+      </button>
+    </form>
+  </ion-content>
+</layout-sidemenu>

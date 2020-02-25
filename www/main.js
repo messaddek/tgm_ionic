@@ -1558,6 +1558,14 @@ var map = {
 	"./ReportsComponent/reports.module": [
 		"./src/app/ReportsComponent/reports.module.ts",
 		"ReportsComponent-reports-module"
+	],
+	"./add-report/add-report.module": [
+		"./src/app/AccountComponent/add-report/add-report.module.ts",
+		"add-report-add-report-module"
+	],
+	"./add-video/add-video.module": [
+		"./src/app/AccountComponent/add-video/add-video.module.ts",
+		"add-video-add-video-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -2250,14 +2258,14 @@ var AppModule = /** @class */ (function () {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"],],
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]],
             entryComponents: [],
             imports: [
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_13__["AppRoutingModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(),
-                _LayoutSidemenu_LayoutSidemenu_module__WEBPACK_IMPORTED_MODULE_14__["LayoutSidemenuModule"],
+                _LayoutSidemenu_LayoutSidemenu_module__WEBPACK_IMPORTED_MODULE_14__["LayoutSidemenuModule"]
             ],
             providers: [
                 _app_router__WEBPACK_IMPORTED_MODULE_11__["AppRouter"],
@@ -2269,7 +2277,7 @@ var AppModule = /** @class */ (function () {
                 _ionic_native_stripe_ngx__WEBPACK_IMPORTED_MODULE_10__["Stripe"],
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -2325,7 +2333,7 @@ var logg = function (a, b) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/**\n * only footer below\n */\n#mainFooterWrapper {\n  position: absolute;\n  bottom: .2em;\n  width: 100%;\n  border: 2px solid black; }\n#mainFooterContent {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 10em;\n  overflow: auto;\n  background: yellow; }\n.main-footer-visible {\n  bottom: 9em !important; }\n#bugBtn {\n  width: 2em;\n  height: 2em;\n  position: absolute;\n  right: .6em;\n  top: -2em;\n  z-index: 10;\n  border: 2px solid black;\n  border-bottom: 0;\n  border-radius: .6em .6em 0 0;\n  background: yellow;\n  padding: .2em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9waW91c2JveC9wcm9qZWN0cy9ub2RlLmpzL3RnbV9pb25pYy9zcmMvYXBwL2Zvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBOztHQUVHO0FBRUg7RUFDRSxtQkFBa0I7RUFDbEIsYUFBWTtFQUNaLFlBQVc7RUFFWCx3QkFBdUIsRUFDeEI7QUFDRDtFQUNFLG1CQUFrQjtFQUNsQixPQUFNO0VBQ04sWUFBVztFQUNYLGFBQVk7RUFDWixlQUFjO0VBRWQsbUJBQWtCLEVBQ25CO0FBQ0Q7RUFDRSx1QkFBc0IsRUFDdkI7QUFFRDtFQUNFLFdBQVU7RUFDVixZQUFXO0VBQ1gsbUJBQWtCO0VBQ2xCLFlBQVc7RUFDWCxVQUFTO0VBQ1QsWUFBVztFQUVYLHdCQUF1QjtFQUN2QixpQkFBZ0I7RUFDaEIsNkJBQTRCO0VBRTVCLG1CQUFrQjtFQUNsQixjQUFhLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9mb290ZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLyoqXG4gKiBvbmx5IGZvb3RlciBiZWxvd1xuICovXG5cbiNtYWluRm9vdGVyV3JhcHBlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiAuMmVtO1xuICB3aWR0aDogMTAwJTtcblxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbn1cbiNtYWluRm9vdGVyQ29udGVudCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMGVtO1xuICBvdmVyZmxvdzogYXV0bztcblxuICBiYWNrZ3JvdW5kOiB5ZWxsb3c7XG59XG4ubWFpbi1mb290ZXItdmlzaWJsZSB7XG4gIGJvdHRvbTogOWVtICFpbXBvcnRhbnQ7XG59XG5cbiNidWdCdG4ge1xuICB3aWR0aDogMmVtO1xuICBoZWlnaHQ6IDJlbTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogLjZlbTtcbiAgdG9wOiAtMmVtO1xuICB6LWluZGV4OiAxMDtcblxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLWJvdHRvbTogMDtcbiAgYm9yZGVyLXJhZGl1czogLjZlbSAuNmVtIDAgMDtcblxuICBiYWNrZ3JvdW5kOiB5ZWxsb3c7XG4gIHBhZGRpbmc6IC4yZW07XG59XG4iXX0= */"
+module.exports = "/**\n * only footer below\n */\n#mainFooterWrapper {\n  position: absolute;\n  bottom: .2em;\n  width: 100%;\n  border: 2px solid black; }\n#mainFooterContent {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 10em;\n  overflow: auto;\n  background: yellow; }\n.main-footer-visible {\n  bottom: 9em !important; }\n#bugBtn {\n  width: 2em;\n  height: 2em;\n  position: absolute;\n  right: .6em;\n  top: -2em;\n  z-index: 10;\n  border: 2px solid black;\n  border-bottom: 0;\n  border-radius: .6em .6em 0 0;\n  background: yellow;\n  padding: .2em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tb2hhbW1lZC9Eb2N1bWVudHMvR2l0SHViL3RnbV9pb25pYy9zcmMvYXBwL2Zvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBOztHQUVHO0FBRUg7RUFDRSxtQkFBa0I7RUFDbEIsYUFBWTtFQUNaLFlBQVc7RUFFWCx3QkFBdUIsRUFDeEI7QUFDRDtFQUNFLG1CQUFrQjtFQUNsQixPQUFNO0VBQ04sWUFBVztFQUNYLGFBQVk7RUFDWixlQUFjO0VBRWQsbUJBQWtCLEVBQ25CO0FBQ0Q7RUFDRSx1QkFBc0IsRUFDdkI7QUFFRDtFQUNFLFdBQVU7RUFDVixZQUFXO0VBQ1gsbUJBQWtCO0VBQ2xCLFlBQVc7RUFDWCxVQUFTO0VBQ1QsWUFBVztFQUVYLHdCQUF1QjtFQUN2QixpQkFBZ0I7RUFDaEIsNkJBQTRCO0VBRTVCLG1CQUFrQjtFQUNsQixjQUFhLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9mb290ZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLyoqXG4gKiBvbmx5IGZvb3RlciBiZWxvd1xuICovXG5cbiNtYWluRm9vdGVyV3JhcHBlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiAuMmVtO1xuICB3aWR0aDogMTAwJTtcblxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbn1cbiNtYWluRm9vdGVyQ29udGVudCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMGVtO1xuICBvdmVyZmxvdzogYXV0bztcblxuICBiYWNrZ3JvdW5kOiB5ZWxsb3c7XG59XG4ubWFpbi1mb290ZXItdmlzaWJsZSB7XG4gIGJvdHRvbTogOWVtICFpbXBvcnRhbnQ7XG59XG5cbiNidWdCdG4ge1xuICB3aWR0aDogMmVtO1xuICBoZWlnaHQ6IDJlbTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogLjZlbTtcbiAgdG9wOiAtMmVtO1xuICB6LWluZGV4OiAxMDtcblxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLWJvdHRvbTogMDtcbiAgYm9yZGVyLXJhZGl1czogLjZlbSAuNmVtIDAgMDtcblxuICBiYWNrZ3JvdW5kOiB5ZWxsb3c7XG4gIHBhZGRpbmc6IC4yZW07XG59XG4iXX0= */"
 
 /***/ }),
 
@@ -2386,7 +2394,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/piousbox/projects/node.js/tgm_ionic/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/mohammed/Documents/GitHub/tgm_ionic/src/main.ts */"./src/main.ts");
 
 
 /***/ })
